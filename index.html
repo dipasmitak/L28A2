@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error Handling Example</title>
+    </head>
+    <body>
+        <h2>Click the button to check error handling</h2>
+        <button onclick="checkError()">Click Me</button>
+        <script>
+            function checkError() {
+                try {
+                    //This will cause an error because x is not defined
+                    var result = x + 5;
+                    alert("Result is: " + result);
+                } catch (error) {
+                    alert(" Error caught: " + error.message);
+                }
+            }
+        </script>
+    </body>
+</html>
